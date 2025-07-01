@@ -44,3 +44,48 @@ body {
     align-items: center;
     justify-content: center;
 }
+
+.list-items {
+    position: relative;
+    background: #fff;
+    margin-top: 15px;
+    border-radius: 8px;
+    padding: 16px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  
+}
+
+.list-items .item {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    height: 50px;
+    cursor: pointer;
+    transition: 0.3s;
+    padding: 0 15px;
+    border-radius: 8px;
+}
+.list-items .item:hover{
+    background: #e7f0f7;
+}
+.list-items .item-text{
+    font-size: 16px;
+    font-weight: 400;
+    color: #333;
+}
+.item .checkbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 16px;
+    width: 16px;
+    border: 1.5px solid #c0c0c0;
+    border-radius: 4px;
+    margin-right: 12px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+.checkbox .check-icon{
+    font-size: 11px;
+    transform: scale(0);
+}
