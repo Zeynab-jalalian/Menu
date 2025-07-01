@@ -66,14 +66,17 @@ body {
     padding: 0 15px;
     border-radius: 8px;
 }
-.list-items .item:hover{
+
+.list-items .item:hover {
     background: #e7f0f7;
 }
-.list-items .item-text{
+
+.list-items .item-text {
     font-size: 16px;
     font-weight: 400;
     color: #333;
 }
+
 .item .checkbox {
     display: flex;
     justify-content: center;
@@ -86,14 +89,29 @@ body {
     cursor: pointer;
     transition: all 0.3s ease-in-out;
 }
-.checkbox .check-icon{
+
+.checkbox .check-icon {
     font-size: 11px;
     transform: scale(0);
+    transition: all 0.3s ease-in-out;
 }
 
-.select-btn.open .arrow-down{
+
+
+
+.select-btn.open .arrow-down {
     transform: rotate(-180deg);
 }
-.select-btn.open ~ .list-items{
+
+.select-btn.open~.list-items {
     display: block;
+}
+
+.item.checked .check-icon {
+    color: white;
+    transform: scale(1);
+}
+.item.checked .checkbox{
+    background: #4070f4;
+    border-color: #4070f4;
 }
